@@ -1,6 +1,6 @@
 {
   "name" : "frdl/remote-psr4",
-  "type" : "library",
+  "type" : "frdl-module",
   "description": "An php psr4 Autoloader which is autoloading from a remote server.",	  
   "license": ["MIT"],	  
   "require" : {
