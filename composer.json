@@ -1,12 +1,13 @@
 {
-  "name" : "frdl/remote-psr4",
+  "name" : "webfan3/frdl-module-remote-psr4",
   "type" : "frdl-module",
-  "description": "An php psr4 Autoloader which is autoloading from a remote server.",	  
+  "description": "An php psr4 Autoloader which is autoloading from a remote server [frdl-module#edition].",	  
   "license": ["MIT"],	  
   "require" : {
 	    "php": ">=5.3"
   },	  
   "autoload": {
+	"files" : ["inc/autloader-file-include.php"],  
         "psr-4": {
             "Webfan\\Psr4Loader\\": "src/Webfan/Psr4Loader/"
         }
