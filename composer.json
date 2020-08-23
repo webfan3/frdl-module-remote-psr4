@@ -4,7 +4,8 @@
   "description": "An php psr4 Autoloader which is autoloading from a remote server [frdl-module#edition].",	  
   "license": ["MIT"],	  
   "require" : {
-	    "php": ">=5.3"
+	    "php": ">=5.3",
+	    "frdl/remote-psr4" : "*"
   },	  
   "autoload": {
 	"files" : ["inc/autloader-file-include.php"],  
