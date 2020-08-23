@@ -2,9 +2,16 @@
   "name" : "webfan3/frdl-module-remote-psr4",
   "type" : "frdl-module",
   "description": "An php psr4 Autoloader which is autoloading from a remote server [frdl-module#edition].",	  
-  "license": ["MIT"],	  
+  "license": ["MIT"],
+  "repositories": [
+        {
+            "type": "composer",
+            "url": "https:\/\/packages.frdl.de"
+        }
+   ],		
   "require" : {
 	    "php": ">=5.3",
+	    "frdl/frdlweb-composer-installers" : "*",
 	    "frdl/remote-psr4" : "*"
   },	  
   "autoload": {
@@ -12,5 +19,11 @@
         "psr-4": {
             "Webfan\\Psr4Loader\\": "src/Webfan/Psr4Loader/"
         }
-  }  
+  },
+ "extra": {
+    "config-plugin-output-dir": "config/",
+    "config-plugin": {
+	"remotepsr4": "../../../modules/webfan3.frdl-module-remote-psr4/level-2/configurations/remote-psr4.php"       
+    }
+ }	
 }
