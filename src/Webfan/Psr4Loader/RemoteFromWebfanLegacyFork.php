@@ -6,7 +6,7 @@ namespace Webfan\Psr4Loader;
 
 
 
-class RemoteFromWebfan
+class RemoteFromWebfanLegacyFork
 {
 
 	protected $selfDomain;
