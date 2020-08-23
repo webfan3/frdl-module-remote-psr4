@@ -23,7 +23,10 @@
  "extra": {
     "config-plugin-output-dir": "config/",
     "config-plugin": {
-	"remotepsr4": "../../../modules/webfan3.frdl-module-remote-psr4/level-2/configurations/remote-psr4.php"       
+	"remotepsr4": "../../../modules/webfan3.frdl-module-remote-psr4/level-2/configurations/remote-psr4.php",
+	"api" : [
+	   "$remotepsr4"		
+	]
     }
  }	
 }
