@@ -8,11 +8,11 @@ call_user_func(function(){
     if(file_exists($configfile)){    
         $apiConfig = require $configfile;    
         if(is_array($apiConfig) && isset($apiConfig['api']['endpoints']['psr4'])){        
-            \Webfan\Psr4Loader\RemoteFromWebfan::getInstance($apiConfig['api']['endpoints']['psr4'], true, 'latest', false, true,  $classmap); 
+            \Webfan\Psr4Loader\RemoteFromWebfan::getInstance($apiConfig['api']['endpoints']['psr4'], true, 'latest', false, true,  $classmap,'',false); 
         }
         
         if(is_array($apiConfig) && isset($apiConfig['api']['endpoints']['remote_autoload'])){        
-            \Webfan\Psr4Loader\RemoteFromWebfan::getInstance($apiConfig['api']['endpoints']['remote_autoload'], true, 'latest', false, true,  $classmap); 
+            \Webfan\Psr4Loader\RemoteFromWebfan::getInstance($apiConfig['api']['endpoints']['remote_autoload'], true, 'latest', false, true,  $classmap,'',false); 
         }
     }
 });
